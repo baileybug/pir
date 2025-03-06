@@ -1,0 +1,50 @@
+---
+layout: default
+title: "The Pool Industry Report"
+---
+
+<section class="hero">
+    <div class="hero-overlay">
+        <h1>Welcome to The Pool Industry Report</h1>
+    </div>
+</section>
+
+<main>
+    <section class="about">
+        <h2>About Us</h2>
+        <p>With over a decade of experience in the pool and spa industry, we've made it our mission to simplify pool care for both professionals and homeowners. Form our early days as service technicians to managaing large-scale commercial projects, we've tackled every challenge the aquatics world has to offer.</p><br>
+        
+        <p>At <strong>The Pool Industry Report</strong>, we break down complex topics into clear, practical advice — whether it's solving stubborn algae problems, planning a renovation, or optimizing pool business operations. Our goal is to help you make informed decisions with confidence.</p><br>
+        
+        <p>Join us as we dive deep into everything from essential maintenance tips to the latest industry trends. Whether you're maintaining a backyard pool or managing a commerical facility, we're here to make your job easier — and your pool experience better</p>
+    </section>
+
+        <section class="latest-posts">
+            <div class="section-title">
+                <h2>Latest Articles</h2>
+            </div>
+            <div class="posts-container">
+                {% for post in site.posts limit:3 %}
+
+                <article>
+                    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                    <p>{{ post.excerpt }}</p>
+                </article>
+                {% endfor %}
+            </div>
+            <div class="latest-articles-cta">
+                <a href="/blog" class="cta-button">See All Articles →</a>
+            </div>
+    </section>
+
+    <section class="sponsor">
+        <div class="sponsor-container">
+            <h2>Sponsored By</h2>
+            <div class="sponsor-content">
+                <img src="/assets/images/AquaSuite logo.jpg" alt="Sponsor Logo" class="sponsor-logo">
+                <p>Our blog is proudly sponsored by <strong>AquaSuite</strong>, providing innovative solutions for pool industry professionals. AquaSuite streamlines your daily operations with automated chemical tracking, intelligent route optimiziation, and comprehensive client management tools.<br> Designed by pool professionals for pool professionals, AquaSuite eliminates paperwork headaches and helps you provide consistent, high-quality service to every customer. Learn how AquaSuite can help you grow your business while spending less time on administrative tasks.</p>
+                <a href="https://www.useaquasuite.com/" class="sponsor-button" target="_blank">Learn More</a>
+            </div>
+        </div>
+    </section>
+</main>
