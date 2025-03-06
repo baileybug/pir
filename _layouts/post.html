@@ -2,12 +2,12 @@
 layout: default
 ---
 
-<article>
-    <h1>{{ page.title }}</h1>
-    <p><em>Published on {{ page.date | date: "%B %d, %Y" }}</em></p>
-    <div>{{ content }}</div>
-</article>
-
-<div class="back-to-articles">
-    <a href="/blog/">← Back to Articles</a>
+<div class="post-wrapper">
+    <div class="post-container">
+        <h1>{{ page.title }}</h1>
+        <p class="post-date">{{ page.date | date: "%B %d, %Y" }}</p>
+        <div class="post-content">
+            {{ content }}
+        </div>
+    </div>
 </div>
